@@ -12,8 +12,7 @@ public class CourseId implements ValueObject<CourseId> {
     private final String id;
 
     public static CourseId nextId() {
-        // TODO Generate ID
-        return null;
+        return new CourseId(String.valueOf(System.nanoTime()));
     }
 
     @Override

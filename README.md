@@ -12,14 +12,22 @@
 
 ### 说明
 
-目前仅有 paper 部分
+现有 Paper 和 Course 两个模块
 
 
-
-### 现有操作
+### 现有 Paper 操作
 
 | 功能          | Method | URI               |
 | ------------- | ------ | ----------------- |
 | 获取所有paper | GET    | /papers           |
 | 组卷          | POST   | /papers           |
 | 重新组卷      | PUT    | /papers/:paper_id |
+
+### 现有 Course 操作
+| 功能          | Method | URI               |
+| ------------- | ------ | ----------------- |
+| 获取所有课程信息 | GET    | /courses               |
+| 获取课程详情    | GET    | /courses/:course_id    |
+| 创建课程       | POST   | /courses               |
+| 发布课程       | PATCH  | /courses/:course_id/publishing    |
+| 更新课程       | PUT    | /courses/:course_id    |

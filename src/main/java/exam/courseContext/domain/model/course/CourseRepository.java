@@ -5,7 +5,7 @@ import java.util.List;
 public interface CourseRepository {
     Course find(CourseId id);
 
-    void save(Course course);
+    Course save(Course course);
 
     List<Course> getAll();
 }

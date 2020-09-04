@@ -40,6 +40,7 @@ public class Course implements Entity<Course> {
     }
 
     public void update(String videoLink) {
+        validateVideoLink(videoLink);
         this.videoLink = videoLink;
     }
 
@@ -48,8 +49,8 @@ public class Course implements Entity<Course> {
     }
 
     public void update(String videoLink, Examination examination) {
-        this.videoLink = videoLink;
-        this.examination = examination;
+        update(videoLink);
+        update(examination);
     }
 
     public static void validateVideoLink(String link) {
